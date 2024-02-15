@@ -1,0 +1,93 @@
+% Exemple de CV utilisant la classe moderncv
+% Style classic en bleu
+% Article complet : http://blog.madrzejewski.com/creer-cv-elegant-latex-moderncv/
+
+\documentclass[10pt,a4paper]{moderncv}
+\moderncvtheme[blue]{classic}                
+\usepackage[utf8]{inputenc}
+\usepackage[top=1cm, bottom=1cm, left=1.7cm, right=1.7cm]{geometry}
+% Largeur de la colonne pour les dates
+\setlength{\hintscolumnwidth}{2.5cm}
+
+\firstname{Axel}
+\familyname{Vittecoq}
+\title{Administrateur Systèmes \& Réseaux}              
+\address{90 avenue de Bagatelle}{13090 Aix-en-Provence}    
+\email{axel@vittecoq.fr}                      
+%\homepage{www.madrzejewski.com}
+\mobile{06 86 34 82 20} 
+\extrainfo{30 ans -- Permis B}
+%\quote{Une citation cool}
+\begin{document}
+\maketitle
+
+\section{Expériences Professionnelles}
+\cventry{2018 -- now()}{Administrateur Systèmes \& Réseaux}{Digital Virgo}{Aix-en-Provence}{}
+{
+AS35070
+datacenters
+}
+\cventry{2016 -- 2018}{Ingénieur Systèmes \& Réseaux}{Meetic}{Paris}{}
+{
+Administration et évolution de la plateforme web haute disponibilité hébergeant toutes les marques européennes de Meetic.\newline
+Environ 700 serveurs sous RedHat. Essentiellement du PHP propulsé sur Nginx avec load balancers F5 BIGIP.\newline
+Rédaction de modules et profils Puppet\newline
+Assistance à l'équipe d'exploitation et résolution des incidents.\newline
+Projets notables:
+\begin{itemize}%
+  \item Réinstallation et upgrade de la chaine de déploiement Bamboo
+  \item Upgrade et migration de la solution de sauvegarde EMC Avamar + Datadomain
+  \item Refonte du monitoring sous Sensu\newline
+\end{itemize}
+}
+
+\cventry{2014 -- 2016}{Ingénieur Systèmes \& Réseaux}{Arkena}{Ivry s/seine}{}
+{
+Maintien en condition operationnelle de la plateforme Cloud4Media pour le transfert de fichiers media. 300 serveurs client répartis dans
+le monde et 150 serveurs (physiques ou virtuels) internes.\newline
+Déploiement des nouvelles versions, amélioration de la redondance et réduction des SPOF.\newline
+Refonte des metrics sur cacti puis InfluxDB/Grafana\newline
+Refonte des differents serveurs web sur frontaux apache load-balançé avec proxying.\newline
+Support N2 auprès des clients: incidents hardware, applis metier, diagnostic réseaux\newline
+}
+
+\cventry{2012 -- 2014}{Administrateur Systèmes \& Réseaux}{Multiposting}{Paris}{}{
+Responsable de l'infrastructure informatique de l'entreprise: \textasciitilde30 serveurs
+\begin{itemize}%
+  \item Administration, installation et migration de serveurs Gentoo/Linux composant la plateforme web
+  \item Administration bases de données MySQL \& MongoDB (migration, replication, cluster)
+  \item Evolution de l'infrastructure pour répondre à la croissance de l'entreprise et au volume de données à traiter: scalabilité, haute disponibilité, redondance.
+\end{itemize}
+Conception du réseau interne: brassage, architecure vlan, switching, routing, QoS, load balancing WAN.
+Administration du réseau qui comptabilise ~150 postes et support technique (Windows, Linux, Messagerie, Téléphonie) auprès des collaborateurs\newline{}
+}
+
+\cventry{2010 -- 2011}{Hotliner}{Isagri}{Beauvais}{}{Support téléphonique auprès des clients du logiciel "Isacompta"\newline{}}
+
+\section{Compétences}
+\cvitem{Devops}{Puppet, Ansible}
+\cvitem{Scripting}{Shell, Python}
+\cvitem{BDD}{MySQL, MongoDB, InfluxDB}
+\cvitem{Systèmes}{Linux: Debian, RedHat, Gentoo}
+\cvitem{Administration}{Apache2, tomcat, nginx, lighttpd, BIND, Postfix, iptables, Samba, supervisord, collectd, rabbitmq}
+\cvitem{Monitoring}{SNMP, Nagios, Sensu, Cacti, Munin, MRTG, Grafana, Kibana}
+\cvitem{Réseaux}{Réseaux WAN, Protocole IP, VLAN, SSL, VPN (IPSec, OpenVPN), Fortinet, Extreme}
+\cvitem{Logiciels}{Git, JIRA, Confluence, Bamboo, Jenkins, Appdynamics, MS Office, Photoshop, After Effects}
+\cvitem{Anglais}{courant}{}
+%\cvlanguage{Anglais}{lu, écrit, parlé}{}
+
+%\cvcomputer{Langages}{(X)HTML, PHP, CSS, PL/SQL, C/C++, Java, Bash}{}{}
+%\cvcomputer{Base de données}{MySQL, Oracle}{CMS}{Wordpress, Symfony2 (notions)}
+%\cvcomputer{Analyse}{Merise, UML, Design Patterns}{}{}
+%\cvcomputer{Systèmes}{Windows XP/Seven/Server 2003/Server 2008, Linux (Debian)}{}{}
+%\cvcomputer{Administration}{Apache2, BIND, Postfix, Fail2ban, Proxmox (openVZ), Iptables,Nagios}{}{}
+
+\section{Formations}
+\cventry{2010 -- 2011}{Licence Professionnelle}{IUT Amiens (80)}{}{}{Réseaux et génie informatique}
+\cventry{2007 -- 2009}{DUT Informatique}{IUT Amiens (80)}{}{}{}
+
+\section{Centres d'intérêt}
+\cvitem{Sport}{Escalade, slackline, course à pied, marathon}
+\cvitem{Loisirs}{Photo amateur, cataphilie}
+
+\end{document}
